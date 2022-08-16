@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Cadastro </title>
+  <link rel="stylesheet" href="FormularioStyle.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="corpo">
+    <h1>CADASTRO</h1>
+    <form class="form1" action="email@email.com" method="get">   
+      <label for="nome">Nome:</label>
+      <input type=text name="nome" id="nome" required>
+
+      <label for="email">Email:</label>
+      <input type=text name="email" id="email" required>
+        
+      Estado:        
+      <span id="estados">
+        <input type=radio name="uf" id="SP"> <label for="SP">SP</label>
+        <input type=radio name="uf" id="RJ"> <label for="RJ">RJ</label>
+        <input type=radio name="uf" id="ES"> <label for="ES">ES</label>
+        <input type=radio name="uf" id="MG"> <label for="MG">MG</label>
+      </span>
+      
+      <label for="rg">RG:</label>
+      <input type=number name="rg" id="rg" min="0" max="9999999" required>
+      
+      <label for="cpf">CPF:</label>
+      <input type=number name="CPF" id="cpf" min="0" max="99999999999" required>
+      
+      <label for="login">Login:</label>
+      <input type=text name="login" id="login" max="8" required>
+
+      <label for="senha">Senha:</label>
+      <input type=password name="senha" id="senha" max="10" required>
+
+      <span id="envlim">
+        <input type=submit value="Enviar" class="botoes2">
+        <input type=reset value="Limpar" class="botoes2">
+      </span>
+    </form>
+  </div>
+</body>
+</html>
